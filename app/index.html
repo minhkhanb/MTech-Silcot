@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Gulp</title>
+    <title>Silcot</title>
     <!--build:css css/app.min.css-->
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/font-awesome.css">
@@ -10,7 +10,74 @@
     <!--endbuild-->
 </head>
 <body>
-
+<div class="wrapper infos">
+    <div class="wrapper-container">
+        <div class="container-fluid">
+            <div class="row">
+                <section>
+                    <header>
+                        <div class="section_container">
+                            <h1>
+                                <a href="#" class="logo"></a>
+                            </h1>
+                        </div><!--end section_container-->
+                    </header>
+                </section>
+            </div>
+            <div class="row">
+                <section>
+                    <main>
+                        <div class="section_container">
+                            <form class="form-horizontal text-center" action="#">
+                                <h2 class="text-uppercase">thông tin nhân viên</h2>
+                                <div class="f-content">
+                                    <div class="form-group item">
+                                        <label for="name" class="col-sm-2 control-label"><i class="fa fa-user" aria-hidden="true"></i></label>
+                                        <div class="col-sm-10">
+                                            <input type="email" class="form-control" id="name" placeholder="Họ tên">
+                                        </div>
+                                    </div>
+                                    <div class="form-group item">
+                                        <label for="phone_no" class="col-sm-2 control-label"><i class="fa fa-mobile" aria-hidden="true"></i></label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" id="phone_no"
+                                                   placeholder="Số điện thoại">
+                                        </div>
+                                    </div>
+                                    <div class="form-group item">
+                                        <label for="work" class="col-sm-2 control-label"><i class="fa fa-map-marker" aria-hidden="true"></i></label>
+                                        <div class="col-sm-10">
+                                            <select class="form-control" id="work"
+                                                    placeholder="Địa điểm làm việc">
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group item action">
+                                        <div class="col-sm-12">
+                                            <button type="submit" class="btn btn-default">bắt đầu</button>
+                                        </div>
+                                    </div>
+                                </div><!--end f-content-->
+                            </form>
+                        </div><!--end section_container-->
+                    </main>
+                </section>
+            </div>
+            <div class="row">
+                <section>
+                    <footer>
+                        <div class="section_container">
+                            <p class="text-center">Chăm sóc da <br />phong cách Nhật Bản</p>
+                        </div><!--end section_container-->
+                    </footer>
+                </section>
+            </div>
+        </div>
+    </div>
+</div><!--end wrapper-->
 <!-- build:js js/app.min.js -->
 <script src="js/jquery-2.2.4.min.js"></script>
 <script src="js/app.js"></script>

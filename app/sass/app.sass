@@ -1,12 +1,123 @@
-
-body
-  color: #000
-  font-size: 16px
-  background: #ddd
-
 @font-face
   font-family: 'UTM_Dax'
   src: url('../fonts/UTM_Dax.eot?v=4.7.0')
   src: url('../fonts/UTM_Dax.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/UTM_Dax.woff2?v=4.7.0') format('woff2'), url('../fonts/UTM_Dax.woff?v=4.7.0') format('woff'),  url('../fonts/UTM_Dax.ttf?v=4.7.0') format('truetype'), url('../fonts/UTM_Dax.svg?v=4.7.0#UTM_Dax') format('svg')
   font-weight: normal
   font-style: normal
+
+body
+  font-family: 'UTM_Dax', sans-serif
+  color: #000
+  font-size: 16px
+
+.logo
+  display: block
+  width: 15.8125rem
+  height: 9.3125rem
+  margin: 2.25rem 0 0 2rem
+  background: url('../images/logo.png') 0 0 / contain no-repeat
+  position: relative
+  z-index: 2
+
+.wrapper-container
+  max-width: 768px
+  margin: 0 auto
+  background: #04116d
+
+.infos form h2
+  font-size: 3.4375rem
+  color: #fff
+
+.infos form
+  position: relative
+  z-index: 2
+  max-width: 562px
+  margin: 0 auto
+
+.infos form label
+  background: #252668
+  color: #fff
+  width: 77px
+  height: 0
+  font-size: 32px
+  text-align: center !important
+  padding: 57px 0
+  position: absolute
+  top: 0
+  left: 0
+  z-index: 2
+
+.infos .form-horizontal .form-group.item
+  position: relative
+  border-top: 3px solid #e6b45f
+
+.infos .form-horizontal .form-group.item.action
+  border: 0
+
+.infos form label + div
+  padding: 0
+  width: 100%
+
+.infos form input,
+.infos form select
+  width: 100%
+  height: 0
+  font-size: 32px
+  padding: 31px 20px 31px 90px
+  border-radius: 0
+
+.infos form .btn
+  background: #2a2c79
+  color: #fff
+  font-size: 36px
+  text-transform: uppercase
+  border-radius: 0
+  border: 3px solid #e6b45f
+
+footer,
+.wrapper-container
+  position: relative
+
+footer .section_container
+  background: url('../images/bg-footer.png') bottom center no-repeat
+  background-size: 100% auto
+  overflow: hidden
+  min-height: 100px
+  position: relative
+
+footer:before,
+header:before
+  background: url('../images/bg-hoa-bot.png') bottom left no-repeat
+  content: ''
+  position: absolute
+  bottom: 0
+  left: 0
+  right: 0
+  margin: auto
+  width: 100%
+  padding-bottom: 50%
+
+header:before
+  background: url('../images/bg-hoa-header.png') top right no-repeat
+  top: 0
+  bottom: auto
+
+footer p
+  font-size: 0.875rem
+  color: #e0ae5c
+  float: right
+  margin: 37px 24px 20px 0
+
+@media (max-width: 768px)
+  .infos form label
+    padding: 32px 0
+
+  .infos form label i
+    position: absolute
+    top: 50%
+    left: 50%
+    -webkit-transform: translate(-50%, -50%)
+    -moz-transform: translate(-50%, -50%)
+    -ms-transform: translate(-50%, -50%)
+    -o-transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%)
